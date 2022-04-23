@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<h1>Make a Graph!</h1>
+<body>
+	<form action="/" method="POST">
+		<label for="xs">Enter your x-axis data here:</label><br>
+		<input type="text" id="xs" name="xs"><br>
+		<br>
+		<label for="x_delim">Enter the deliminator for the x-axis data:</label><br>
+		<input type="text" id="x_delim" name="x_delim"><br>
+		<br>
+		<label for="ys">Enter your y-axis data here:</label><br>
+		<input type="text" id="ys" name="ys"><br>
+		<br>
+		<label for="y_delim">Enter the deliminator for the y-axis data:</label><br>
+		<input type="text" id="y_delim" name="y_delim"><br>
+		<br>
+		<input type="submit" value="Make Graph">
+		<input type="reset">
+	</form>
+	<body>
+	    <img src={{figure}} alt='Your graph here' width='500' height='500'>
+	    <p>{{figure}}</p>
+	    <p>x-axis data:</p><p> {{xs}}</p><br>
+	    <p>y-axis data:</p><p> {{ys}}</p><br>
+	</body>
+
+
+</body>
+</html>
